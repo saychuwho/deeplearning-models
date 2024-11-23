@@ -22,12 +22,15 @@
 Networks do MNIST dataset classification. Trainers return confusion matrix, loss change graph by epoch, top-three images.
 
 **Confusion matrix example**
+
 <img src="../img/OnlyPythonThreeLayerNet_confusion.png" width="60%">
 
 **Loss change graph by epoch example**
+
 <img src="../img/OnlyPythonThreeLayerNet_loss.png" width="60%">
 
 **Top-three images example**
+
 <img src="../img/OnlyPythonThreeLayerNet_topthree.png" width="60%">
 
 ## How to use
