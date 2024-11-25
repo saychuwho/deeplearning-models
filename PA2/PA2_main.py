@@ -42,7 +42,7 @@ print(f"\n... {trainer_name} start ...")
 lr = 10.0
 
 optimizer = SGD(lr=lr)
-case_2_trainer = Trainer(net=case_1_net,
+case_2_trainer = Trainer(net=case_2_net,
                          optimizer=optimizer,
                          epoch=epoch,
                          trainer_name=trainer_name)
@@ -59,12 +59,12 @@ case_3_net = PA2LSTM(word_to_vec_map=word_to_vec_map_50d,
                      is_dropout=False)
 trainer_name = "LSTM_Adam_50d"
 print(f"\n... {trainer_name} start ...")
-lr = 10.0
-
+lr = 0.1
+epoch_adam = 1000
 optimizer = Adam(lr=lr)
-case_3_trainer = Trainer(net=case_1_net,
+case_3_trainer = Trainer(net=case_3_net,
                          optimizer=optimizer,
-                         epoch=epoch,
+                         epoch=epoch_adam,
                          trainer_name=trainer_name)
 # case_3_trainer.train()
 process = multiprocessing.Process(target=case_3_trainer.train, args=(False,))
@@ -81,7 +81,7 @@ print(f"\n... {trainer_name} start ...")
 lr = 10.0
 
 optimizer = SGD(lr=lr)
-case_4_trainer = Trainer(net=case_1_net,
+case_4_trainer = Trainer(net=case_4_net,
                          optimizer=optimizer,
                          epoch=epoch,
                          trainer_name=trainer_name)
@@ -100,7 +100,7 @@ print(f"\n... {trainer_name} start ...")
 lr = 10.0
 
 optimizer = SGD(lr=lr)
-case_5_trainer = Trainer(net=case_1_net,
+case_5_trainer = Trainer(net=case_5_net,
                          optimizer=optimizer,
                          epoch=epoch,
                          trainer_name=trainer_name)

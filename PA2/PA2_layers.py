@@ -143,7 +143,7 @@ class Embedding:
         sentence_word_vec = []
         for word in sentence_list:
             tmp_word_vec = self.map[word.lower()]
-            sentence_word_vec.append(tmp_word_vec.reshape((1,50)))
+            sentence_word_vec.append(tmp_word_vec.reshape((1,-1)))
 
         return sentence_word_vec
 
