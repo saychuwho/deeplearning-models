@@ -8,6 +8,8 @@ import multiprocessing
 word_to_vec_map_50d = get_map()
 word_to_vec_map_100d = get_map("100d")
 
+epoch = 500         # global epoch
+
 processes = []
 
 """ case 1: RNN + SGD + 50d """
@@ -17,7 +19,7 @@ case_1_net = PA2VanilaRNN(word_to_vec_map=word_to_vec_map_50d,
 trainer_name = "RNN_SGD_50d"
 print(f"\n... {trainer_name} start ...")
 lr = 0.1
-epoch = 40
+
 optimizer = SGD(lr=lr)
 case_1_trainer = Trainer(net=case_1_net,
                          optimizer=optimizer,
@@ -38,7 +40,7 @@ case_2_net = PA2LSTM(word_to_vec_map=word_to_vec_map_50d,
 trainer_name = "LSTM_SGD_50d"
 print(f"\n... {trainer_name} start ...")
 lr = 0.1
-epoch = 100
+
 optimizer = SGD(lr=lr)
 case_2_trainer = Trainer(net=case_1_net,
                          optimizer=optimizer,
@@ -58,7 +60,7 @@ case_3_net = PA2LSTM(word_to_vec_map=word_to_vec_map_50d,
 trainer_name = "LSTM_Adam_50d"
 print(f"\n... {trainer_name} start ...")
 lr = 0.1
-epoch = 100
+
 optimizer = Adam(lr=lr)
 case_3_trainer = Trainer(net=case_1_net,
                          optimizer=optimizer,
@@ -77,7 +79,7 @@ case_4_net = PA2LSTM(word_to_vec_map=word_to_vec_map_100d,
 trainer_name = "LSTM_SGD_100d"
 print(f"\n... {trainer_name} start ...")
 lr = 0.1
-epoch = 100
+
 optimizer = SGD(lr=lr)
 case_4_trainer = Trainer(net=case_1_net,
                          optimizer=optimizer,
@@ -96,7 +98,7 @@ case_5_net = PA2LSTM(word_to_vec_map=word_to_vec_map_100d,
 trainer_name = "LSTM_SGD_100d_Dropout"
 print(f"\n... {trainer_name} start ...")
 lr = 0.1
-epoch = 100
+
 optimizer = SGD(lr=lr)
 case_5_trainer = Trainer(net=case_1_net,
                          optimizer=optimizer,

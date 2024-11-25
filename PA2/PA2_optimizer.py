@@ -7,12 +7,21 @@ class SGD:
         self.lr = self.lr_init
         self.iter = 0
         self.k = 0.1
+        self.step_to_decay = 50
+        self.before_decay_step = 0
 
     def update(self, params, grads):
         self.iter += 1
         
-        # if self.iter % 10 == 0: self.lr /= 2.0              # step learning rate scheduling
-        # self.lr = self.lr_init * np.exp(-self.k*self.iter)  # exponential rate scheduling    
+        # my lr decay
+        # if self.iter % 10 == 0: self.lr /= 2.0              
+        
+        # exponential rate scheduling    
+        # self.lr = self.lr_init * np.exp(-self.k*self.iter)  
+        
+        if self.iter % self.step_to_decay == 0 and self.before_decay_step != 0:
+            self.lr = self.lr_init * (self.k ** (self.iter / self.before_decay_step))
+            self.before_decay_step = self.iter
 
         for i in range(len(params)):
             params[i] -= self.lr * grads[i]
