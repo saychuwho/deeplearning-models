@@ -7,7 +7,7 @@ class SGD:
         self.lr = self.lr_init
         self.iter = 0
         self.k = 0.1
-        self.step_to_decay = 50
+        self.step_to_decay = 30
         self.before_decay_step = 0
 
     def update(self, params, grads):

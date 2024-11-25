@@ -6,8 +6,8 @@ from emo_utils import *
 
 
 def get_map(glove_type="50d"):
-    glove_file = f"./glove.6b.{glove_type}.txt"
-    glove_map_file = f"./glove.6b.{glove_type}-map.pkl"
+    glove_file = f"./glove.6B.{glove_type}.txt"
+    glove_map_file = f"./glove.6B.{glove_type}-map.pkl"
     map = None
 
     if os.path.isfile(glove_map_file):
