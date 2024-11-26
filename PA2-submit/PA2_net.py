@@ -126,11 +126,12 @@ class PA2VanilaRNN:
 
 
 class PA2LSTM:
-    def __init__(self, word_to_vec_map, word_vec_size, is_adam=False, is_dropout=True):
+    def __init__(self, word_to_vec_map, word_vec_size, dropout_ratio=0.5, is_adam=False, is_dropout=True):
         self.word_vec_size = word_vec_size
         self.hidden_state_size = 128
         self.label_size = 5
         self.is_dropout = is_dropout
+        self.dropout_ratio = dropout_ratio
 
         # parameters
         lstm_1_Wx = 0.01*np.random.randn(self.word_vec_size, 4*self.hidden_state_size).astype('f')
@@ -161,7 +162,7 @@ class PA2LSTM:
         self.lstm_1_dh = np.zeros((1,self.hidden_state_size), dtype='f')
         self.lstm_1_dc = np.zeros((1,self.hidden_state_size), dtype='f')
         
-        self.dropout_1 = Dropout()
+        self.dropout_1 = Dropout(self.dropout_ratio)
 
         self.lstm_2 = LSTM(lstm_2_Wx, lstm_2_Wh, lstm_2_b)
         self.lstm_2_h = np.zeros((1,self.hidden_state_size), dtype='f')
@@ -169,7 +170,7 @@ class PA2LSTM:
         self.lstm_2_dh = np.zeros((1,self.hidden_state_size), dtype='f')
         self.lstm_2_dc = np.zeros((1,self.hidden_state_size), dtype='f')
 
-        self.dropout_2 = Dropout()
+        self.dropout_2 = Dropout(self.dropout_ratio)
         self.fc = LinearLayer(fc_W, fc_b)
         
 
