@@ -2,12 +2,12 @@ import numpy as np
 
 
 class SGD:
-    def __init__(self, lr=0.01):
+    def __init__(self, lr=0.01, decay_step=30):
         self.lr_init = lr
         self.lr = self.lr_init
         self.iter = 0
         self.k = 0.1
-        self.step_to_decay = 30
+        self.step_to_decay = decay_step
         self.before_decay_step = 0
 
     def update(self, params, grads):
@@ -19,6 +19,7 @@ class SGD:
         # exponential rate scheduling    
         # self.lr = self.lr_init * np.exp(-self.k*self.iter)  
         
+        # step decay
         if self.iter % self.step_to_decay == 0 and self.before_decay_step != 0:
             self.lr = self.lr_init * (self.k ** (self.iter / self.before_decay_step))
             self.before_decay_step = self.iter

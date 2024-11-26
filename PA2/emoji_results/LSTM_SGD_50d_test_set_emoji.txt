@@ -1,114 +1,114 @@
 
-True :: test sentence: she is attractive // emoji predicted: ❤️ // emoji answer ❤️ 
-
-False :: test sentence: I love to the stars and back // emoji predicted: :disappointed: // emoji answer ❤️ 
-
-True :: test sentence: do you like pizza  // emoji predicted: 🍴 // emoji answer 🍴 
-
-False :: test sentence: the lectures are great though  // emoji predicted: :disappointed: // emoji answer :smile: 
-
-False :: test sentence: We had such a lovely dinner tonight // emoji predicted: :disappointed: // emoji answer ❤️ 
-
-False :: test sentence: I am going to the stadium // emoji predicted: :smile: // emoji answer ⚾ 
-
-True :: test sentence: she plays baseball // emoji predicted: ⚾ // emoji answer ⚾ 
-
 True :: test sentence: Let us go play baseball // emoji predicted: ⚾ // emoji answer ⚾ 
 
-False :: test sentence: My grandmother is the love of my life // emoji predicted: :disappointed: // emoji answer ❤️ 
+True :: test sentence: he did an amazing job // emoji predicted: :smile: // emoji answer :smile: 
 
-True :: test sentence: he is the best player // emoji predicted: ⚾ // emoji answer ⚾ 
+False :: test sentence: food is life // emoji predicted: :smile: // emoji answer 🍴 
 
-True :: test sentence: you are a loser // emoji predicted: :disappointed: // emoji answer :disappointed: 
+False :: test sentence: I got humiliated by my sister // emoji predicted: ❤️ // emoji answer :disappointed: 
 
-True :: test sentence: I want chinese food // emoji predicted: 🍴 // emoji answer 🍴 
+True :: test sentence: i miss him // emoji predicted: ❤️ // emoji answer ❤️ 
 
-True :: test sentence: I am at the baseball game // emoji predicted: ⚾ // emoji answer ⚾ 
-
-True :: test sentence: The first base man got the ball // emoji predicted: ⚾ // emoji answer ⚾ 
-
-True :: test sentence: where is the ball // emoji predicted: ⚾ // emoji answer ⚾ 
-
-True :: test sentence: stop messing around // emoji predicted: :disappointed: // emoji answer :disappointed: 
-
-True :: test sentence: you two are cute // emoji predicted: ❤️ // emoji answer ❤️ 
-
-True :: test sentence: you are failing this exercise // emoji predicted: :disappointed: // emoji answer :disappointed: 
-
-True :: test sentence: I love dogs // emoji predicted: ❤️ // emoji answer ❤️ 
-
-False :: test sentence: That catcher sucks  // emoji predicted: :disappointed: // emoji answer ⚾ 
-
-False :: test sentence: I love my dad // emoji predicted: :disappointed: // emoji answer ❤️ 
-
-True :: test sentence: I like to laugh // emoji predicted: :smile: // emoji answer :smile: 
-
-True :: test sentence: you are awful // emoji predicted: :disappointed: // emoji answer :disappointed: 
-
-True :: test sentence: throw the ball // emoji predicted: ⚾ // emoji answer ⚾ 
-
-True :: test sentence: where is the food // emoji predicted: 🍴 // emoji answer 🍴 
-
-True :: test sentence: I hate him // emoji predicted: :disappointed: // emoji answer :disappointed: 
-
-False :: test sentence: I miss you so much // emoji predicted: :disappointed: // emoji answer ❤️ 
-
-True :: test sentence: I want to eat // emoji predicted: 🍴 // emoji answer 🍴 
-
-True :: test sentence: any suggestions for dinner // emoji predicted: 🍴 // emoji answer 🍴 
-
-False :: test sentence: Good job // emoji predicted: :disappointed: // emoji answer :smile: 
-
-False :: test sentence: we made it // emoji predicted: :disappointed: // emoji answer :smile: 
-
-False :: test sentence: Do you want to give me a hug // emoji predicted: :smile: // emoji answer ❤️ 
-
-True :: test sentence: go away // emoji predicted: :disappointed: // emoji answer :disappointed: 
-
-False :: test sentence: he had to make a home run // emoji predicted: :disappointed: // emoji answer ⚾ 
-
-True :: test sentence: I love indian food // emoji predicted: 🍴 // emoji answer 🍴 
-
-True :: test sentence: I like to smile // emoji predicted: :smile: // emoji answer :smile: 
-
-False :: test sentence: he got a raise // emoji predicted: :disappointed: // emoji answer :smile: 
-
-False :: test sentence: Miss you so much // emoji predicted: :disappointed: // emoji answer ❤️ 
-
-False :: test sentence: I am proud of you forever // emoji predicted: :disappointed: // emoji answer :smile: 
+False :: test sentence: I want to eat // emoji predicted: :disappointed: // emoji answer 🍴 
 
 True :: test sentence: See you at the restaurant // emoji predicted: 🍴 // emoji answer 🍴 
 
-True :: test sentence: French macaroon is so tasty // emoji predicted: 🍴 // emoji answer 🍴 
+True :: test sentence: The baby is adorable // emoji predicted: ❤️ // emoji answer ❤️ 
 
-True :: test sentence: she did not answer my text  // emoji predicted: :disappointed: // emoji answer :disappointed: 
+True :: test sentence: I am going to the stadium // emoji predicted: ⚾ // emoji answer ⚾ 
 
-True :: test sentence: Stop making this joke ha ha ha // emoji predicted: :smile: // emoji answer :smile: 
+True :: test sentence: vegetables are healthy // emoji predicted: 🍴 // emoji answer 🍴 
 
-False :: test sentence: food is life // emoji predicted: :disappointed: // emoji answer 🍴 
+True :: test sentence: lets brunch some day // emoji predicted: 🍴 // emoji answer 🍴 
 
-True :: test sentence: I am ordering food // emoji predicted: 🍴 // emoji answer 🍴 
+False :: test sentence: she got me a present // emoji predicted: :disappointed: // emoji answer ❤️ 
 
-True :: test sentence: I think I will end up alone // emoji predicted: :disappointed: // emoji answer :disappointed: 
+False :: test sentence: I am excited // emoji predicted: :disappointed: // emoji answer :smile: 
 
-False :: test sentence: she is happy // emoji predicted: :disappointed: // emoji answer :smile: 
+True :: test sentence: Why are you feeling bad // emoji predicted: :disappointed: // emoji answer :disappointed: 
 
-False :: test sentence: I did not have breakfast  // emoji predicted: 🍴 // emoji answer :disappointed: 
+False :: test sentence: do you have a ball // emoji predicted: :smile: // emoji answer ⚾ 
 
-True :: test sentence: My life is so boring // emoji predicted: :disappointed: // emoji answer :disappointed: 
+True :: test sentence: I love my dad // emoji predicted: ❤️ // emoji answer ❤️ 
+
+False :: test sentence: Are you down for baseball this afternoon // emoji predicted: :disappointed: // emoji answer ⚾ 
+
+True :: test sentence: he likes baseball // emoji predicted: ⚾ // emoji answer ⚾ 
+
+True :: test sentence: where is the ball // emoji predicted: ⚾ // emoji answer ⚾ 
+
+True :: test sentence: I am proud of your achievements // emoji predicted: :smile: // emoji answer :smile: 
+
+False :: test sentence: my dog just had a few puppies // emoji predicted: 🍴 // emoji answer ❤️ 
+
+False :: test sentence: I boiled rice // emoji predicted: :smile: // emoji answer 🍴 
+
+True :: test sentence: throw the ball // emoji predicted: ⚾ // emoji answer ⚾ 
+
+False :: test sentence: That catcher sucks  // emoji predicted: :disappointed: // emoji answer ⚾ 
+
+False :: test sentence: The assignment is too long  // emoji predicted: :smile: // emoji answer :disappointed: 
+
+False :: test sentence: She is the cutest person I have ever seen // emoji predicted: :disappointed: // emoji answer ❤️ 
+
+True :: test sentence: I like to laugh // emoji predicted: :smile: // emoji answer :smile: 
+
+True :: test sentence: you failed the midterm // emoji predicted: :disappointed: // emoji answer :disappointed: 
+
+False :: test sentence: dance with me // emoji predicted: :disappointed: // emoji answer :smile: 
+
+False :: test sentence: no one likes him // emoji predicted: ❤️ // emoji answer :disappointed: 
+
+True :: test sentence: stop messing around // emoji predicted: :disappointed: // emoji answer :disappointed: 
+
+False :: test sentence: I worked during my birthday // emoji predicted: :smile: // emoji answer :disappointed: 
+
+True :: test sentence: Your stupidity has no limit // emoji predicted: :disappointed: // emoji answer :disappointed: 
+
+True :: test sentence: she takes forever to get ready  // emoji predicted: :disappointed: // emoji answer :disappointed: 
+
+False :: test sentence: I am looking for a date // emoji predicted: :disappointed: // emoji answer ❤️ 
+
+False :: test sentence: lets exercise // emoji predicted: :disappointed: // emoji answer ⚾ 
+
+False :: test sentence: I want to joke // emoji predicted: :disappointed: // emoji answer :smile: 
+
+False :: test sentence: this joke is killing me haha // emoji predicted: ❤️ // emoji answer :smile: 
 
 False :: test sentence: The chicago cubs won again // emoji predicted: :disappointed: // emoji answer ⚾ 
 
-True :: test sentence: too bad that you were not here // emoji predicted: :disappointed: // emoji answer :disappointed: 
+True :: test sentence: she is so cute // emoji predicted: ❤️ // emoji answer ❤️ 
 
-False :: test sentence: vegetables are healthy // emoji predicted: :smile: // emoji answer 🍴 
+True :: test sentence: I am hungry // emoji predicted: 🍴 // emoji answer 🍴 
 
-True :: test sentence: he is so cute // emoji predicted: ❤️ // emoji answer ❤️ 
+False :: test sentence: I love you // emoji predicted: :smile: // emoji answer ❤️ 
 
-False :: test sentence: Congrats on the new job // emoji predicted: :disappointed: // emoji answer :smile: 
+True :: test sentence: I am ordering food // emoji predicted: 🍴 // emoji answer 🍴 
 
-True :: test sentence: do you want to join me for dinner  // emoji predicted: 🍴 // emoji answer 🍴 
+True :: test sentence: I will have a cheese cake // emoji predicted: 🍴 // emoji answer 🍴 
 
-False :: test sentence: I am so happy for you // emoji predicted: :disappointed: // emoji answer :smile: 
+False :: test sentence: You are incredibly intelligent and talented // emoji predicted: ⚾ // emoji answer :smile: 
 
-accuracy : 0.6071428571428571
+False :: test sentence: any suggestions for dinner // emoji predicted: :disappointed: // emoji answer 🍴 
+
+False :: test sentence: do you want to join me for dinner  // emoji predicted: :disappointed: // emoji answer 🍴 
+
+True :: test sentence: will you be my valentine // emoji predicted: ❤️ // emoji answer ❤️ 
+
+True :: test sentence: congratulations on your acceptance // emoji predicted: :smile: // emoji answer :smile: 
+
+False :: test sentence: we made it // emoji predicted: :disappointed: // emoji answer :smile: 
+
+False :: test sentence: he is handsome // emoji predicted: :smile: // emoji answer ❤️ 
+
+False :: test sentence: she is attractive // emoji predicted: :smile: // emoji answer ❤️ 
+
+False :: test sentence: you suck // emoji predicted: :smile: // emoji answer :disappointed: 
+
+True :: test sentence: he can not do anything // emoji predicted: :disappointed: // emoji answer :disappointed: 
+
+False :: test sentence: I want to go play // emoji predicted: :disappointed: // emoji answer ⚾ 
+
+False :: test sentence: Congratulations // emoji predicted: :disappointed: // emoji answer :smile: 
+
+accuracy : 0.4642857142857143

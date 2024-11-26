@@ -58,15 +58,15 @@ class PA2VanilaRNN:
         self.is_dropout = is_dropout
 
         # parameters
-        rnn_1_Wx = 0.01*np.random.randn(self.word_vec_size, self.hidden_state_size).astype('f')
-        rnn_1_Wh = 0.01*np.random.randn(self.hidden_state_size, self.hidden_state_size).astype('f')
+        rnn_1_Wx = (np.random.randn(self.word_vec_size, self.hidden_state_size)/np.sqrt(self.word_vec_size)).astype('f')
+        rnn_1_Wh = (np.random.randn(self.hidden_state_size, self.hidden_state_size)/np.sqrt(self.hidden_state_size)).astype('f')
         rnn_1_b = np.zeros(self.hidden_state_size).astype('f')
     
-        rnn_2_Wx = 0.01*np.random.randn(self.hidden_state_size, self.hidden_state_size).astype('f')
-        rnn_2_Wh = 0.01*np.random.randn(self.hidden_state_size, self.hidden_state_size).astype('f')
+        rnn_2_Wx = (np.random.randn(self.hidden_state_size, self.hidden_state_size)/np.sqrt(self.hidden_state_size)).astype('f')
+        rnn_2_Wh = (np.random.randn(self.hidden_state_size, self.hidden_state_size)/np.sqrt(self.hidden_state_size)).astype('f')
         rnn_2_b = np.zeros(self.hidden_state_size).astype('f')
         
-        fc_W = 0.01*np.random.randn(self.hidden_state_size, self.label_size).astype('f')
+        fc_W = (np.random.randn(self.hidden_state_size, self.label_size)/np.sqrt(self.hidden_state_size)).astype('f')
         fc_b = np.zeros(self.label_size).astype('f')
 
         # layers
@@ -173,7 +173,7 @@ class PA2VanilaRNN:
 
 
 class PA2LSTM:
-    def __init__(self, word_to_vec_map, word_vec_size, is_dropout=True):
+    def __init__(self, word_to_vec_map, word_vec_size, is_adam=False, is_dropout=True):
         self.word_vec_size = word_vec_size
         self.hidden_state_size = 128
         self.label_size = 5
@@ -182,13 +182,20 @@ class PA2LSTM:
         # parameters
         lstm_1_Wx = 0.01*np.random.randn(self.word_vec_size, 4*self.hidden_state_size).astype('f')
         lstm_1_Wh = 0.01*np.random.randn(self.hidden_state_size, 4*self.hidden_state_size).astype('f')
-        lstm_1_b = np.zeros(4*self.hidden_state_size).astype('f')
-    
         lstm_2_Wx = 0.01*np.random.randn(self.hidden_state_size, 4*self.hidden_state_size).astype('f')
         lstm_2_Wh = 0.01*np.random.randn(self.hidden_state_size, 4*self.hidden_state_size).astype('f')
-        lstm_2_b = np.zeros(4*self.hidden_state_size).astype('f')
-        
         fc_W = 0.01*np.random.randn(self.hidden_state_size, self.label_size).astype('f')
+        
+        if not is_adam:
+            lstm_1_Wx = (np.random.randn(self.word_vec_size, 4*self.hidden_state_size)/np.sqrt(self.word_vec_size)).astype('f')
+            lstm_1_Wh = (np.random.randn(self.hidden_state_size, 4*self.hidden_state_size)/np.sqrt(self.hidden_state_size)).astype('f')
+            lstm_2_Wx = (np.random.randn(self.hidden_state_size, 4*self.hidden_state_size)/np.sqrt(self.hidden_state_size)).astype('f')
+            lstm_2_Wh = (np.random.randn(self.hidden_state_size, 4*self.hidden_state_size)/np.sqrt(self.hidden_state_size)).astype('f')
+            fc_W = (np.random.randn(self.hidden_state_size, self.label_size)/np.sqrt(self.hidden_state_size)).astype('f')
+        
+
+        lstm_1_b = np.zeros(4*self.hidden_state_size).astype('f')
+        lstm_2_b = np.zeros(4*self.hidden_state_size).astype('f')
         fc_b = np.zeros(self.label_size).astype('f')
 
         # layers
