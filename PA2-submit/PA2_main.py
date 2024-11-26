@@ -29,7 +29,7 @@ case_1_trainer = Trainer(net=case_1_net,
                          epoch=rnn_epoch,
                          trainer_name=trainer_name)
 
-case_1_trainer.train()
+# case_1_trainer.train()
 process = multiprocessing.Process(target=case_1_trainer.train, args=(False,))
 processes.append(process)
 process.start()
