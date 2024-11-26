@@ -28,39 +28,6 @@ def dataloader():
     train_sentences, train_labels = read_csv(filename=train_set_file)
     test_sentences, test_labels = read_csv(filename=test_set_file)
 
-    # # Formal code which I think that I have to split train & test set;;;;
-    # # make label_to_index
-    # label_to_index = {i:[] for i in range(5)}
-    # for i, label in enumerate(Y):
-    #     label_to_index[label].append(i)
-
-    # # shuffle lebel_to_index
-    # for i in range(5):
-    #     random.shuffle(label_to_index[i])
-
-    # # pop out test_index & train_index
-    # test_num_divide = [12, 11, 11, 11, 11]
-    # train_index = []
-    # test_index = []
-    # random.shuffle(test_num_divide)
-    
-    # for i, num in enumerate(test_num_divide):
-    #     test_index += [label_to_index[i].pop() for _ in range(num)]
-    #     train_index += label_to_index[i]
-
-    # random.shuffle(train_index)
-    # random.shuffle(test_index)
-
-    # # make train set, test set
-    # train_sentences, train_labels, test_sentences, test_labels = [], [], [], []
-    # for train_i in train_index:
-    #     train_sentences.append(X[train_i])
-    #     train_labels.append(Y[train_i])
-
-    # for test_i in test_index:
-    #     test_sentences.append(X[test_i])
-    #     test_labels.append(Y[test_i])
-
     return train_sentences, train_labels, test_sentences, test_labels
 
 
